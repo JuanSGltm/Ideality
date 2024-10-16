@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".SignupScreen">
 
     <ImageView
@@ -42,10 +43,10 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="65dp"
         android:backgroundTint="#FFFFFF"
+        android:onClick="SignupScreenBusiness"
         android:paddingLeft="50dp"
         android:text="@string/business"
         android:textColor="#000000"
-        android:onClick="SignupScreenBusiness"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView"
@@ -108,13 +109,13 @@
         android:text="@string/Email"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText2"
+        app:layout_constraintBottom_toTopOf="@+id/etEmailRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/etEmailRegister"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_marginStart="31dp"
@@ -142,7 +143,7 @@
         app:layout_constraintBottom_toTopOf="@+id/editTextPhone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/etEmailRegister" />
 
     <EditText
         android:id="@+id/editTextPhone"
@@ -232,12 +233,12 @@
         android:text="@string/password2"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintBottom_toTopOf="@+id/etPasswordRegister"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/etPasswordRegister"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_marginStart="30dp"
@@ -250,7 +251,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnRegister"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="41dp"
@@ -258,11 +259,22 @@
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="25dp"
         android:backgroundTint="#000000"
-        android:text="@string/Create"
         android:onClick="LoginScreen"
+        android:text="@string/Create"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintStart_toEndOf="@+id/etPasswordRegister"
         app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+    <TextView
+        android:id="@+id/tvLoggedIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Login Status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
