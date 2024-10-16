@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Ideality App</string>
+    <string name="ideality_logo">Ideality Logo</string>
+    <string name="username">USERNAME</string>
+    <string name="username_info">Enter username</string>
+    <string name="password">PASSWORD</string>
+    <string name="password_info">Enter password</string>
+    <string name="forgotpassword">I forgot my password</string>
+    <string name="continueasaguest">Continue as a guest</string>
+    <string name="Button_Login">Log In</string>
+    <string name="DoNotHaveAccount">Don\'t have an account?</string>
+    <string name="Button_Signup">Sign Up</string>
+    <string name="register">Register</string>
+    <string name="customer">Customer</string>
+    <string name="business">Business</string>
+    <string name="name">Name</string>
+    <string name="Email">Email</string>
+    <string name="Business_name">Business Name</string>
+    <string name="Business_Email">Business Email</string>
+    <string name="Mobile_Number">Mobile Number</string>
+    <string name="Address">Address</string>
+    <string name="DoB">Date of Birth</string>
+    <string name="password2">Password</string>
+    <string name="Create">Create</string>
+    <string name="BusinessOwner">Business Owner</string>
+</resources>
